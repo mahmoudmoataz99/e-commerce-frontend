@@ -26,14 +26,17 @@ body {
   background: #fff !important;
   opacity: 0.5 !important;
 }
+
 .swiper-pagination-bullet-active {
   opacity: 1 !important;
   background: #c9a86c !important;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff !important;
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 22px !important;

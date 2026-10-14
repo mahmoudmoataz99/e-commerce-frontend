@@ -16,14 +16,13 @@ import {
   CircularProgress,
 } from '@mui/material';
 import { CheckCircle } from 'lucide-react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
 import { api, getErrorMessage } from '../api/client';
 import { useCartStore } from '../store/cartStore';
 import type { Address, PaymentMethod, Order } from '../types';
 
 export default function Checkout() {
-  const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
   const { items, fetchCart, subtotal, clearCart } = useCartStore();
 
