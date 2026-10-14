@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: #c9a86c !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px !important;
+}
+
+img {
+  max-width: 100%;
+}
